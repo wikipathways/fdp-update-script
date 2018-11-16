@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fdp: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix lang: <http://id.loc.gov/vocabulary/iso639-1/> .
+
+<http://fdp.wikipathways.org/fdp> dcterms:title "FDP of fdp.wikipathways.org" ;
+	rdfs:label "FDP of fdp.wikipathways.org" ;
+	dcterms:hasVersion "1.0" ;
+	fdp:metadataIssued "2018-11-01T19:43:54.302Z"^^xsd:dateTime ;
+	fdp:metadataIdentifier <http://fdp.wikipathways.org/fdp#metadataID> .
+
+<http://fdp.wikipathways.org/fdp#metadataID> a <http://purl.org/spar/datacite/ResourceIdentifier> ;
+	dcterms:identifier "28a971bb-9b93-4cbc-a4a6-0bbadfd3fa9d" .
+
+<http://fdp.wikipathways.org/fdp> fdp:metadataModified "2018-11-01T19:43:54.308Z"^^xsd:dateTime ;
+	dcterms:language lang:en ;
+	dcterms:publisher <http://dtls.nl> .
+
+<http://dtls.nl> a <http://xmlns.com/foaf/0.1/Organization> ;
+	<http://xmlns.com/foaf/0.1/name> "DTLS" .
+
+<http://fdp.wikipathways.org/fdp> dcterms:description "FDP of fdp.wikipathways.org" ;
+	dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+	dcterms:conformsTo <http://rdf.biosemantics.org/fdp/shex/fdpMetadata> ;
+	a r3d:Repository ;
+	rdfs:seeAlso <http://fdp.wikipathways.org/fdp/swagger-ui.html> ;
+	r3d:repositoryIdentifier <http://fdp.wikipathways.org/fdp#repositoryID> .
+
+<http://fdp.wikipathways.org/fdp#repositoryID> a <http://purl.org/spar/datacite/Identifier> ;
+	dcterms:identifier "fccfae0a-976f-4611-a550-dc57a91e8c98" .
+
+<http://fdp.wikipathways.org/fdp> r3d:institutionCountry <http://lexvo.org/id/iso3166/NL> .
